@@ -1,0 +1,28 @@
+header, footer, aside, nav, article, section {
+  display: block;
+  min-height: 1px;
+}
+/*div, span, object, iframe, h1, h2, h3, h4, p, a, img, ol, ul, li, form, label, figure {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+* {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}*/
+ol, ul, dl {
+  list-style: none;
+}
+.cfx:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+

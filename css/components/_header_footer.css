@@ -1,0 +1,304 @@
+.nav-button {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 1000;
+  width: 48px;
+  height: 48px;
+  cursor: pointer;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+@media only screen and (min-width: 499px) {
+  .nav-button {
+    display: none;
+  }
+}
+.nav-button div {
+  width: 48px;
+  height: 48px;
+  position: relative;
+}
+.nav-button div span {
+  position: absolute;
+  top: 4px;
+  left: 12px;
+  width: 24px;
+  height: 2px;
+  background: #fff;
+}
+.nav-button div span#nb1 {
+  top: 14px;
+}
+.nav-button div span#nb2 {
+  top: 22px;
+}
+.nav-button div span#nb3 {
+  top: 30px;
+}
+
+.header {
+  width: 100%;
+  padding: 0 0 0;
+  z-index: 100;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  height: auto;
+}
+@media only screen and (min-width: 499px) {
+  .header {
+    height: 100%;
+    min-height: 700px;
+  }
+}
+.header .image {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background: #002b4f;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.header .image .hidef {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  -webkit-transition: 5s;
+  transition: 5s;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.header .image .hidef.active {
+  opacity: 1;
+}
+.logo {
+  overflow: hidden;
+  display: block;
+  text-indent: -3000px;
+  padding-bottom: 0;
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 110;
+  background-image: url(../../images/header-logo.jpg);
+  background-position: -1224px -32px;
+  background-size: 1920px 672px;
+  width: 220.8px;
+  height: 116.8px;
+  -webkit-transition: .5s;
+  transition: .5s;
+  transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  -webkit-transform-origin: 0 0;
+  -webkit-transform: scale(.4);
+  transform: scale(.4);
+}
+.header__top_right {
+  position: fixed;
+  z-index: 103;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 70px;
+}
+@media only screen and (min-width: 499px) {
+  .header__top_right {
+    text-align: right;
+    top: 0;
+    right: 0;
+    padding-top: 0;
+    height: auto;
+  }
+}
+.header__nav {
+  padding-bottom: 0px;
+  z-index: 100;
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 2.8rem;
+  padding: 22px 10px 16px 0;
+  text-transform: uppercase;
+  position: absolute;
+  z-index: 103;
+  top: 0;
+  right: 0;
+  width: 100%;
+  -webkit-transition: .2s;
+  transition: .2s;
+  -webkit-transform: translateX(0) translateY(-200px);
+  transform: translateX(0) translateY(-200px);
+  background: #002b4f;
+  padding-top: 70px;
+}
+@media only screen and (min-width: 499px) {
+  .header__nav ul {
+    opacity: 1;
+    text-align: right;
+  }
+}
+.header__nav ul {
+  display: block;
+  text-align: center;
+  width: 100%;
+  opacity: 0;
+  -webkit-transition: .1s;
+  transition: .1s;
+}
+.header__nav ul li {
+  display: inline-block;
+  margin: 0 0 0 0;
+}
+.header__nav ul li.active a {
+    color: #96CAE5;
+}
+.header__nav ul li a {
+  display: inline-block;
+  padding: 0 10px;
+  text-decoration: none;
+  color: #fff;
+}
+@media only screen and (min-width: 499px) {
+  .header__nav ul li a {
+    padding: 0 10px;
+  }
+}
+
+/* FOOTER */
+.footer {
+  color: rgb(255, 255, 255);
+  background: rgb(0, 43, 79);
+}
+@media only screen and (min-width: 499px) {
+  .footer {
+    padding-bottom: 100px;
+  }
+}
+.footer .footer_inner {
+  position: relative;
+}
+/*.footer .contact_info:before {
+  content: "";
+  display: block;
+  background-image: url(../../images/QD_Icon.png);
+  background-position: -765px -20px;
+  background-size: 1200px 420px;
+  width: 41px;
+  height: 73px;
+  margin: 0 auto 20px;
+  transform-origin: 50% 0;
+  -ms-transform-origin: 50% 0;
+  -webkit-transform-origin: 50% 0;
+  -webkit-transform: scale(.6);
+  transform: scale(.6);
+  position: absolute;
+  top: 20px;
+  right: 0;
+}
+@media only screen and (min-width: 499px) {
+  .footer .contact_info:before {
+    position: relative;
+    right: auto;
+    top: auto;
+    left: -10px;
+    -webkit-transform: scale(.8);
+    transform: scale(.8);
+  }
+}*/
+.footer .contact_info {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-family: Rajdhani, sans-serif;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  padding-left: 20px;
+  padding-right: 20px;
+  position: relative;
+}
+@media only screen and (min-width: 499px) {
+  .footer .contact_info {
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 499px) {
+  .footer .contact_info {
+    padding-top: 50px;
+    font-family: Rajdhani, sans-serif;
+    font-size: 2rem;
+    line-height: 2.8rem;
+  }
+}
+/*.footer .contact_info::before {
+  content: "";
+  display: block;
+  background-image: url(../..images/QD_Icon_bl.png);
+  background-size: 1200px 420px;
+  width: 41px;
+  height: 73px;
+  transform-origin: 50% 0px 0px;
+  transform: scale(0.6);
+  position: absolute;
+  top: 20px;
+  right: 0px;
+  background-position: -765px -20px;
+  margin: 0px auto 20px;
+}
+@media only screen and (min-width: 499px) {
+  .footer .contact_info::before {
+    position: relative;
+    right: auto;
+    top: auto;
+    left: -10px;
+    transform: scale(0.8);
+  }
+}*/
+
+@media only screen and (min-width: 499px) {
+  .footer .contact_info li {
+    display: inline;
+    margin: 0 10px;
+  }
+}
+.footer .contact_info li.address {
+  display: block;
+  padding-bottom: 10px;
+  padding-right: 40px;
+}
+@media only screen and (min-width: 499px) {
+  .footer .contact_info li.address {
+    display: block;
+    width: auto;
+    margin: 0 0;
+    padding-bottom: 30px;
+    padding-right: 0;
+  }
+}
+.footer .contact_info li.eml::before {
+  content: "E.";
+  color: rgb(73,176,105);
+  margin-right: 3px;
+}
+.footer .contact_info li.tel::before {
+  content: "T.";
+  color: rgb(73,176,105);
+  margin-right: 3px;
+}
+
+@media only screen and (min-width: 499px) {
+  .footer .expand {
+    text-align: center;
+    padding: 0 10% 20px;
+  }
+}
